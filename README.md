@@ -31,9 +31,7 @@ Individual customer-provided daily prices between ports, in USD.
 The task ahead of you comprises 2 main subtasks. Please read both of them carefully and remember to work on both.
 
 1. Develop an [HTTP-based API](#task-1-http-based-api) capable of handling the GET and POST requests described
-below in [GET Request Task](#get-request-task) and [POST Request Task](#post-request-task). Our stack is based on Flask, but you are free to choose
-anything you like. All data returned is expected to be in JSON format. Please demonstrate your knowledge of SQL (as opposed to using ORM querying tools) in at least one part.
-2. Describe the system you would design for handling the [Batch Processing Task](#task-2-batch-processing-task).
+below in [GET Request Task](#get-request-task) and [POST Request Task](#post-request-task). Our stack is based on Flask, but you are free to choose any Python framework you like. All data returned is expected to be in JSON format. Please demonstrate your knowledge of SQL (as opposed to using ORM querying tools).
 
 
 ## Task 1: HTTP-based API
@@ -102,7 +100,10 @@ Response should include absolute difference of the uploaded price versus average
 Following up on the [POST Request Task](#post-request-task), imagine if you had to receive and compare tens of thousands of prices, conforming to a similar format. Describe, using a couple of paragraphs, how you would design the system to be able to handle those requirements. Which factors do you need to take into consideration?
 
 
-# Extra details
+# Requirements
+
+* Write the solution using Python and SQL, you can use an ORM but please
+  demonstrate some raw SQL
 
 * Keep your solution in a Version Control System of your
   choice. *Provide the solution as a public repository that can be
@@ -115,9 +116,20 @@ Following up on the [POST Request Task](#post-request-task), imagine if you had 
 * Use dates in YYYY-MM-DD format for the API. There is no need for more
   complicated date processing.
 
+# Extra details
+
+* It usually takes 2 - 6 hours to complete this task for a developer with 2+ years of experience in building APIs with Python and SQL.
+
+* Our key evaluation criteria:
+    - Ease of setup and testing
+    - Code clarity and simplicity
+    - Comments where appropriate
+    - Code organisation
+    - Tests
+
 * You are encouraged to modify or extend the database schema if you think a different model fits the task better.
 
-* If you have any questions, please don't hesitate to contact us at tech-recruitment@xeneta.com
+* If you have any questions, please don't hesitate to contact us
 
 * Please let us know how much time you spent on the task, and of any difficulties that you ran into.
 
