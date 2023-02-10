@@ -26,17 +26,13 @@ Individual customer-provided daily prices between ports, in USD.
 * The price in USD
 * Customer name
 
-# Assignment
+# Assignment: HTTP-based API
 
-The task ahead of you comprises 2 main subtasks. Please read both of them carefully and remember to work on both.
-
-1. Develop an [HTTP-based API](#task-1-http-based-api) capable of handling the GET and POST requests described
+Develop an [HTTP-based API](#task-1-http-based-api) capable of handling the GET and POST requests described
 below in [GET Request Task](#get-request-task) and [POST Request Task](#post-request-task). Our stack is based on Flask, but you are free to choose any Python framework you like. All data returned is expected to be in JSON format. Please demonstrate your knowledge of SQL (as opposed to using ORM querying tools).
 
 
-## Task 1: HTTP-based API
-
-### GET Request Task
+## GET Request
 
 Implement an API endpoint that takes the following parameters:
 
@@ -68,7 +64,7 @@ And returns a list with the prices that given customer has on the given day, com
     ]
 
 
-### POST Request Task
+## POST Request
 
 Implement an API endpoint where you can upload a price, including the following parameters:
 
@@ -93,11 +89,6 @@ Response should include absolute difference of the uploaded price versus average
         "absolute_diff": 355,
         "percent_diff": 35.5
     }
-
-
-## Task 2: Batch Processing Task
-
-Following up on the [POST Request Task](#post-request-task), imagine if you had to receive and compare tens of thousands of prices, conforming to a similar format. Describe, using a couple of paragraphs, how you would design the system to be able to handle those requirements. Which factors do you need to take into consideration?
 
 
 # Requirements
